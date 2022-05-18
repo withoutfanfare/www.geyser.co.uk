@@ -481,6 +481,20 @@
         overflow: initial !important;
       }
 
+      picture,
+      picture source,
+      picture {
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
       @media (min-width: 768px) {
         .ajax-cart-owl-carousel .owl-nav .owl-prev {
           left: -20px;
@@ -543,24 +557,6 @@
         }
       };
     </script>
-
-    <!--
-<script src="https://www.paypal.com/sdk/js?client-id=AV79MtkxYYP4lZFfWXWYpRo4tj-yk1h2J6JKOS8gpy3B7ucgrJ7A2D0-ebpAElpIB6LBma4BrvSVniws&components=messages" data-namespace="paypal2"></script>
--->
-
-    <!-- Google Tag Manager -->
-    <script>
-      /*
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
-{'gtm.start': new Date().getTime(),event:'gtm.js'}
-
-);var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NX8F9TT');
-*/
-    </script>
-    <!-- End Google Tag Manager -->
 
     <!-- PayPal BEGIN -->
     <script>
@@ -632,7 +628,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script>
       var compareProductAddAjax = 0;
     </script>
-
     <!-- Google Tag Manager by MagePal -->
     <noscript
       ><iframe
@@ -643,7 +638,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager by MagePal -->
-
     <script>
       window.cookiesConfig = window.cookiesConfig || {};
       window.cookiesConfig.secure = true;
@@ -659,7 +653,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <!-- BEGIN GTAG CART SCRIPT -->
     <!-- END GTAG CART SCRIPT -->
-
     <script>
       require.config({
         paths: {
@@ -830,7 +823,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }
         }
       </style>
-
       <div id="page-preloader">
         <div class="spinner"></div>
       </div>
@@ -2193,63 +2185,668 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }
             </style>
             <!-- Removed content -->
-            <div class="row">
-                <div class="col-sm-6">Vertical Designer Radiators</div>
-                <div class="col-sm-6">
-                    <div>Horizontal Radiators</div>
-                    <div>Radiator Valves</div>
+            <style>
+              .contained-image {
+                object-fit: contain;
+                /*aspect-ratio: auto;*/
+                height: 100%;
+                width: 100%;
+                max-width: 100%;
+              }
+
+              .pr-10 {
+                padding-right: 10px;
+              }
+
+              .py-lg {
+                padding-top: 80px;
+                padding-bottom: 60px;
+              }
+
+              .my-lg {
+                margin-top: 80px!important;
+                margin-bottom: 80px!important;
+              }
+
+              .bordered-card {
+                border: 2px solid #C6D0DD;
+              }
+
+              .p-lg {
+                padding: 40px;
+              }
+
+              .bg-lightest {
+                background-color: #ffffff;
+              }
+
+              .rounded-sm {
+                border-radius: 12px;
+              }
+
+              p {
+                margin-bottom: 0px;
+                color: #444444;
+              }
+
+              h2, .heading-2 {
+                font-size: 1.8rem;
+              }
+
+              h2, .heading-2,
+              h3, .heading-3 {
+                margin-bottom: 0px;
+                line-height: 1.3;
+                color: #222222;
+              }
+
+              h3, .heading-3 {
+                font-size: 1.6rem;
+              }
+
+              h4, .heading-4,
+              h5, .heading-5 {
+                margin-bottom: 5px;
+                color: #222222;
+              }
+
+              .seo_title,
+              .overlay_inner .overlay_seo_title {
+                margin-bottom: 0px;
+                color: #999999;
+                font-size: 0.8rem;
+                font-weight: 300;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+              }
+
+              .overlay_inner .overlay_seo_title {
+                color: #888888!important;
+              }
+
+              a.plink,
+              .plink {
+                display: block;
+                color: #ff4f97;
+                font-weight: 500;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+              }
+
+              .overlay_inner a.plink:hover {
+                color: #ffffff;
+              }
+
+              a.plink:hover {
+                color: #222222;
+              }
+
+              .card_title {
+                font-size: 1.1rem;
+              }
+
+              .mb-30 {
+                margin-bottom: 30px;
+              }
+
+              .mt-5 {
+                margin-top: 5px;
+              }
+
+              .mt-10 {
+                margin-top: 10px;
+              }
+
+              .mt-15 {
+                margin-top: 15px;
+              }
+
+              .mt-20 {
+                margin-top: 20px;
+              }
+
+              .mt-30 {
+                margin-top: 30px;
+              }
+
+              .pbutton {
+                background-color: #ff4f97;
+                border: 2px solid #ff4f97;
+                color: #ffffff;
+                padding: 5px 12px;
+                font-weight: 500;
+                border-radius: 5px;
+              }
+
+              .bline {
+                height: 8px;
+                width: 160px;
+                background-color: #ced8dc;
+              }
+
+              .home-section p {
+                line-height: 1.6;
+              }
+
+              .feat-list li {
+                margin-bottom: 20px;
+              }
+
+              .flex-container {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: flex-start;
+                align-content: flex-start;
+                gap: 20px 20px;
+              }
+
+              .flex-container p {
+                max-width: 85%;
+                font-size: 1rem;
+              }
+
+              .flex-header,
+              .flex-card {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                gap: 20px 20px;
+              }
+
+              .flex-header h2 {
+                text-align: center;
+                margin: 0px auto;
+              }
+
+              .flex-header p {
+                max-width: 40%;
+                font-size: 1rem;
+                text-align: center;
+                margin: 0px auto;
+              }
+
+              .flex-card h3 {
+                text-align: center;
+                margin: 15px auto 0 auto;
+                font-size: 1.1rem;
+              }
+
+              .flex-card p {
+                max-width: 90%;
+                font-size: 1rem;
+                text-align: center;
+                margin: 0px auto;
+              }
+
+              .dblock {
+                display: block;
+              }
+
+              /*.textresp {*/
+              /*  color: red;*/
+              /*}*/
+
+              a[href^="tel:"], a[href^="callto:"] {
+                color: #ff4f97;
+              }
+
+              .max-w-sm {
+                max-width: 44%!important;
+              }
+
+              .home-section img {
+                max-width: 100%;
+              }
+
+              .home-section img.max-w-lg {
+                max-width: 92%;
+              }
+
+              section.home-section,
+              .resp-m-top {
+                margin-top: 30px;
+              }
+
+              .relative {
+                position: relative;
+              }
+
+              .bgoverlay {
+                background-color: rgba(1, 1, 1, 0.7);
+                display: inline-block;
+                width: auto;
+                height: auto;
+                position: absolute;
+                z-index: 100;
+              }
+
+              .overlay_inner {
+                padding: 20px 25px;
+                font-size: 11px;
+              }
+
+              .overlay_inner .overlay_card_title,
+              .overlay_inner .overlay_seo_title {
+                color: #ffffff;
+              }
+
+              h3.overlay_card_title {
+                font-size: 1.3rem;
+              }
+
+
+              .hero1_overlay {
+                left: 0px;
+                bottom: 260px;
+                max-width: 200px;
+                border-radius: 0px 12px 12px 0px;
+              }
+
+              .hero2_overlay {
+                left: 0px;
+                top: 50px;
+                max-width: 400px;
+                border-radius: 0px 12px 12px 0px;
+              }
+
+              .hero3_overlay {
+                left: 0px;
+                top: 50px;
+                max-width: 350px;
+                border-radius: 0px 12px 12px 0px;
+              }
+
+              /* [1] The container */
+              .img-hover-zoom {
+                -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+                overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+              }
+
+              /* [2] Transition property for smooth transformation of images */
+              .img-hover-zoom img {
+                transform:scale(1);
+                transition: transform .5s ease;
+              }
+
+              /* [3] Finally, transforming the image when container gets hovered */
+              .img-hover-zoom:hover img {
+                transform: scale(1.02);
+              }
+
+              .colmt {
+                margin-top: 0px;
+              }
+
+              .widecolmt {
+                margin-top: 30px;
+              }
+
+              @media (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+                .rd-navbar-nav > li > a {
+                  font-size: 12px;
+                }
+              }
+
+
+
+              @media (max-width: 420px) {
+
+                .overlay_inner {
+                  padding: 10px 15px;
+                }
+
+                .colmt {
+                  margin-top: 30px!important;
+                }
+
+                .colmtwide {
+                  margin-top: 0px!important;
+                }
+
+                h3.overlay_card_title {
+                  font-size: 1rem;
+                }
+
+                .hero1_overlay {
+                  left: 0px;
+                  bottom: 160px;
+                  max-width: 150px;
+                }
+
+                .hero2_overlay {
+                  top: 20px;
+                  max-width: 400px;
+                }
+
+                .hero3_overlay {
+                  top: 20px;
+                  max-width: 350px;
+                }
+
+                .seo_title,
+                .overlay_inner .overlay_seo_title {
+                  font-size: 0.6rem;
+                }
+
+                section.home-section,
+                .resp-m-top {
+                  /*background-color: blue;*/
+                  margin-top: 30px;
+                }
+              }
+
+            </style>
+              <section class='home-section'>
+                <div class="mt-4 row row-no-gutter2">
+                  <div class="col-sm-6 pr-10">
+                    <a href='' class="relative dblock img-hover-zoom rounded-sm">
+                      <picture>
+                        <source srcset="media/wysiwyg/banners/banner-tall.webp" type="image/webp"/>
+                        <img class="relative contained-image"
+                             src="media/wysiwyg/banners/banner-tall.jpg"
+                             alt="Vertical Designer Radiators"/>
+                      </picture>
+                      <div class='bgoverlay hero1_overlay'>
+                        <div class='overlay_inner'>
+                          <h4 class='overlay_seo_title'>Stunning</h4>
+                          <h3 class='overlay_card_title'>Vertical Design Radiators</h3>
+                          <div class='mt-10 plink'>Shop Now</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a href='' class="relative dblock img-hover-zoom rounded-sm colmt">
+                        <picture>
+                          <source srcset="media/wysiwyg/banners/banner-square.webp" type="image/webp"/>
+                          <img class="relative contained-image"
+                               src="media/wysiwyg/banners/banner-square.jpg"
+                               alt="Horizontal Radiators"/>
+                        </picture>
+                        <div class='bgoverlay hero2_overlay'>
+                          <div class='overlay_inner'>
+                            <h4 class='overlay_seo_title'>Designer</h4>
+                            <h3 class='overlay_card_title'>Horizontal Radiators</h3>
+                            <div class='mt-10 plink'>Shop Now</div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="">
+                        <a href='' class="relative dblock img-hover-zoom rounded-sm colmt widecolmt">
+                          <picture>
+                            <source srcset="media/wysiwyg/banners/banner-short.webp" type="image/webp"/>
+                            <img class="relative contained-image"
+                                 src="media/wysiwyg/banners/banner-short.jpg"
+                                 alt="Radiator Valves"/>
+                          </picture>
+                          <div class='bgoverlay hero3_overlay'>
+                            <div class='overlay_inner'>
+                              <h4 class='overlay_seo_title'>Superb</h4>
+                              <h3 class='overlay_card_title'>Radiator Valves</h3>
+                              <div class='mt-10 plink'>Shop Now</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
                 </div>
-            </div>
-              <div class="row">
-                  <div class="col-sm-12">Column Radiators</div>
-              </div>
-              <div class="row">
-                  <div class="col-sm-6">
-                      <div>Mild Steel Radiators</div>
-                  </div>
-                  <div class="col-sm-6">
-                      <div>two</div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-sm-6">
-                      <div>one</div>
-                  </div>
-                  <div class="col-sm-6">
-                      <div>Aluminium Radiators</div>
+              </section>
+
+              <section class='home-section'>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="">
+                      <picture>
+                        <source srcset="media/wysiwyg/banners/bannerhoriz1.webp" type="image/webp"/>
+                        <img class="contained-image rounded-sm"
+                             src="media/wysiwyg/banners/bannerhoriz1.jpg"
+                             alt="Column Radiators"/>
+                      </picture>
+                    </div>
                   </div>
               </div>
-              <div class="row">
-                  <div class="col-sm-6">
-                      <div>Stainless Steel Radiators</div>
+              </section>
+
+              <section class='home-section'>
+                <div class="row mt-35">
+                    <div class="col-sm-6">
+                        <div class='flex-container'>
+                          <h2>Mild Steel Radiators</h2>
+                          <div class='bline'>&nbsp;</div>
+                          <p>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem.
+                          </p>
+                          <a href='' class='pbutton'>Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="">
+                        <picture>
+                          <source srcset="media/wysiwyg/banners/banner-square.webp" type="image/webp"/>
+                          <img class="contained-image rounded-sm"
+                               src="media/wysiwyg/banners/banner-square.jpg"
+                               alt="Horizontal Radiators"/>
+                        </picture>
+                      </div>
+                    </div>
+                </div>
+                <div class="row mt-35">
+                    <div class="col-sm-6">
+                      <div class="">
+                        <picture>
+                          <source srcset="media/wysiwyg/banners/banner-square.webp" type="image/webp"/>
+                          <img class="contained-image rounded-sm"
+                               src="media/wysiwyg/banners/banner-square.jpg"
+                               alt="Horizontal Radiators"/>
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class='resp-m-top flex-container'>
+                          <h2>Aluminium Radiators</h2>
+                          <div class='bline'>&nbsp;</div>
+                          <p>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem.
+                          </p>
+                          <a href='' class='pbutton'>Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-35">
+                    <div class="col-sm-6">
+                        <div class='flex-container'>
+                          <h2>Stainless Steel Radiators</h2>
+                          <div class='bline'>&nbsp;</div>
+                          <p>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem.
+                          </p>
+                          <a href='' class='pbutton'>Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="">
+                        <picture>
+                          <source srcset="media/wysiwyg/banners/banner-square.webp" type="image/webp"/>
+                          <img class="contained-image rounded-sm"
+                               src="media/wysiwyg/banners/banner-square.jpg"
+                               alt="Horizontal Radiators"/>
+                        </picture>
+                      </div>
+                    </div>
+                </div>
+              </section>
+
+              <section class='home-section'>
+                <div class="row">
+                  <div class="col-sm-12 mb-30">
+                    <div class='flex-container'>
+                      <h2>Designer Towel Rails</h2>
+                      <div class='bline'>&nbsp;</div>
+                      <p class='max-w-sm'>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius.
+                      </p>
+                    </div>
                   </div>
-                  <div class="col-sm-6">
-                      <div>two</div>
+                  <div class="col-sm-4">
+                    <div class="mb-30">
+                      <picture>
+                        <source srcset="media/wysiwyg/banners/bannertall1.webp" type="image/webp"/>
+                        <img class="contained-image rounded-sm"
+                             src="media/wysiwyg/banners/bannertall1.jpg"
+                             alt="Designer Towel Rails"/>
+                      </picture>
+                      <div class='mt-15'>
+                        <h4 class='seo_title'>DESIGNER</h4>
+                        <h3 class='card_title'>Designer Towel Rails</h3>
+                        <a href='#' class='mt-20 plink'>Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="mb-30">
+                      <picture>
+                        <source srcset="media/wysiwyg/banners/bannertall1.webp" type="image/webp"/>
+                        <img class="contained-image rounded-sm"
+                             src="media/wysiwyg/banners/bannertall1.jpg"
+                             alt="Ladder Towel Rails"/>
+                      </picture>
+                      <div class='mt-15'>
+                        <h4 class='seo_title'>LADDER</h4>
+                        <h3 class='card_title'>Ladder Towel Rails</h3>
+                        <a href='#' class='mt-20 plink'>Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="mb-30">
+                      <picture>
+                        <source srcset="media/wysiwyg/banners/bannertall1.webp" type="image/webp"/>
+                        <img class="contained-image rounded-sm"
+                             src="media/wysiwyg/banners/bannertall1.jpg"
+                             alt="Electric Towel Rails"/>
+                      </picture>
+                      <div class='mt-15'>
+                        <h4 class='seo_title'>ELECTRIC</h4>
+                        <h3 class='card_title'>Electric Towel Rails</h3>
+                        <a href='#' class='mt-20 plink'>Shop Now</a>
+                      </div>
+                    </div>
                   </div>
               </div>
-              <div class="row">
-                  <div class="col-sm-12">Designer Towel Rails</div>
-                  <div class="col-sm-4">Designer Towel Rails</div>
-                  <div class="col-sm-4">Ladder Towel Rails</div>
-                  <div class="col-sm-4">Electric Towel Rails</div>
-              </div>
-              <div class="row">
-                  <div class="col-sm-6">
-                      <div>one</div>
+              </section>
+
+              <section class="my-lg home-section">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-30">
+                        <picture>
+                          <source srcset="media/wysiwyg/banners/radiatorbanner.svg" type="image/svg+xml"/>
+                          <source srcset="media/wysiwyg/banners/radiatorbanner.webp" type="image/webp"/>
+                          <img class="contained-image rounded-sm max-w-lg"
+                               src="media/wysiwyg/banners/radiatorbanner.jpg"
+                               alt="Geyser Designer Radiators and Towel Rails"/>
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class='flex-container'>
+                          <h2>Designer Radiators <br/>and Towel Rails</h2>
+                          <div class='bline'>&nbsp;</div>
+                          <p>
+                            At Geyser, we believe that everyone should have designer radiators and towel rails that
+                            complement all of the hard work committed to the look and feel of your home. Whether you are
+                            looking for a central heating designer radiator or a central heating towel rail or electric
+                            towel rail, we have what you need.
+                          </p>
+                          <p>
+                            We have a hand in designing a number of products and have close relationships with some
+                            of the worlds leading manufacturers. Geyser is a national online supplier of designer
+                            radiators and designer heated towel rails with over a decade of experience.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+              </section>
+
+              <section class='home-section'>
+                <div class="row">
+                  <div class="col-sm-12 mb-30">
+                    <div class='flex-header'>
+                      <h2>Exceptional Products & Service</h2>
+                      <div class='bline'>&nbsp;</div>
+                      <p class='max-w-sm'>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius.
+                      </p>
+                    </div>
                   </div>
-                  <div class="col-sm-6">
-                      <div>Designer Radiators and Towel Rails</div>
+                  <div class="col-sm-4">
+                    <div class="bordered-card p-lg rounded-sm mb-30 flex-card">
+                      <div>
+                        <img src='/media/wysiwyg/home/icon33.svg' alt='Discounts & Savings' class='card_icon'/>
+                      </div>
+                      <h3>Discounts & Savings</h3>
+                      <p>
+                        Nemo enim ipsam voluptatem voluptears aspernatur aut odit fugit, consequuntur magni dolores.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="bordered-card p-lg rounded-sm mb-30 flex-card">
+                      <div>
+                        <img src='/media/wysiwyg/home/icon17.svg' alt='Trade Accounts' class='card_icon'/>
+                      </div>
+                      <h3>Trade Accounts</h3>
+                      <p>
+                        Nemo enim ipsam voluptatem voluptears aspernatur aut odit fugit, consequuntur magni dolores.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="bordered-card p-lg rounded-sm mb-30 flex-card">
+                      <div>
+                        <img src='/media/wysiwyg/home/icon44.svg' alt='Heat Calculator' class='card_icon'/>
+                      </div>
+                      <h3>Heat Calculator</h3>
+                      <p>
+                        Nemo enim ipsam voluptatem voluptears aspernatur aut odit fugit, consequuntur magni dolores.
+                      </p>
+                    </div>
                   </div>
               </div>
-              <div class="row">
-                  <div class="col-sm-12">Exceptional Products & Service</div>
-                  <div class="col-sm-4">Discounts & Savings</div>
-                  <div class="col-sm-4">Trade Accounts</div>
-                  <div class="col-sm-4">Heat Calculator</div>
-              </div>
-              <div class="row">
-                  <div class="col-sm-12">Summer Sales</div>
-              </div>
+              </section>
+
+              <section class='home-section'>
+                <div class="row mt-35">
+                    <div class="col-sm-12">
+                      <div class="">
+                        <picture>
+                          <source srcset="media/wysiwyg/banners/bannersale.webp" type="image/webp"/>
+                          <img class="contained-image rounded-sm"
+                               src="media/wysiwyg/banners/bannersale.jpg"
+                               alt="On Sale at Geyser"/>
+                        </picture>
+                      </div>
+                    </div>
+                </div>
+              </section>
+
+              <!--
               <div class="row">
                   <div class="col-sm-12">Top Sellers</div>
                   <div class="col-sm-3">one</div>
@@ -2257,14 +2854,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <div class="col-sm-3">three</div>
                   <div class="col-sm-3">four</div>
               </div>
-              <div class="row">
-                  <div class="col-sm-6">
-                      <div>one</div>
-                  </div>
-                  <div class="col-sm-6">
-                      <div>We're Here To Help</div>
-                  </div>
-              </div>
+              -->
+
+              <section class="bg-lightest py-lg home-section">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-30">
+                        <picture>
+                          <source srcset="media/wysiwyg/banners/bannersupport.webp" type="image/webp"/>
+                          <img class="contained-image rounded-sm"
+                               src="media/wysiwyg/banners/bannersupport.jpg"
+                               alt="Geyser Help Choosing Products Or Using Our Website"/>
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class='flex-container'>
+                          <h2>We're Here To Help</h2>
+                          <div class='bline'>&nbsp;</div>
+<!--                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>-->
+                          <ul class='feat-list'>
+                            <li>
+                              <h4>Customer Hotline</h4>
+                              <p>Need help with your order? Question about fittings or accessories? Just give us a
+                                call us on <a href='tel:01204695387'>01204 695387</a></p>
+                            </li>
+                            <li>
+                              <h4>Returns and Exchange</h4>
+                              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit <a href='mailto:sales@geyser.co.uk'>sales@geyser.co.uk</a> id est laborum. </p>
+                            </li>
+                            <li>
+                              <h4>Help Center</h4>
+                              <p>Excepteur sint occaecat technical information non proident, sunt in culpa qui
+                                officia <a href=''>delivery information page.</a></p>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+              </section>
+
             <!-- End Removed content -->
             <style>
               .cms-home h1.page-title {
@@ -2291,7 +2921,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <script type="text/x-magento-init">
         {"*": {"googleMapOptions": {"pluginPageData":{"contacts":{"width":null,"height":null,"show_on":null,"selector":null},"api":null}}}}
       </script>
-
       <script type="text/x-magento-init">
         {
             "*": {
@@ -2306,7 +2935,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
       </script>
-
       <script type="text/x-magento-init">
         {
             "*": {
@@ -2333,145 +2961,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </noscript>
-      <script type="text/x-magento-init">
-        {
-            "body": {
-                "ajaxWishlist": {"isShowSpinner":true,"isShowSuccessMessage":true,"successMessageText":"Product {product.name} has been added to your wishlist.","customerLoginUrl":"https:\/\/www.geyser.co.uk\/customer\/account\/login\/"}        }
-        }
-      </script>
-      <script type="text/x-magento-init">
-        {
-            ".newsletter-popup": {
-                "newsletterPopup": {"customClass":"","timeout":10,"isShowOnStartup":false,"isShowOnFooter":false,"title":"Newsletter Subscription","content":"<p>Sign Up for Our Newsletter:<\/p>","submit":"Subscribe","cancel":"Cancel","socialLinks":[]}        }
-        }
-      </script>
-      <div class="newsletter-popup" style="display: none">
-        <div class="block newsletter">
-          <form
-            class="form subscribe"
-            novalidate
-            action="https://www.geyser.co.uk/newsletter/subscriber/new/"
-            method="post"
-            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
-            id="newsletter-validate-detail_2"
-          >
-            <div class="field newsletter">
-              <div class="control">
-                <input
-                  name="email"
-                  type="email"
-                  id="newsletter-626b017d9f3e4"
-                  placeholder="Enter your email address"
-                  data-validate="{required:true, 'validate-email':true}"
-                />
-              </div>
-            </div>
-
-            <div class="buttons-container">
-              <button class="subscribe" type="button" data-role="action">
-                <span>Subscribe</span>
-              </button>
-              <button class="cancel" type="button" data-role="action">
-                <span>Cancel</span>
-              </button>
-            </div>
-          </form>
-          <!--    <div class="privacy-policy-check-box">-->
-          <!--        <input type="checkbox" class="check_privacy" name="newsletter_tm_id" value="true" />-->
-          <!--        <div class="privacy-policy-check-text">-->
-          <!--        </div>-->
-          <!--    </div>-->
-        </div>
-      </div>
-      <!--
-    For frontend area dictionary file is inserted into html head in Magento/Translation/view/base/templates/dictionary.phtml
-    Same translation mechanism should be introduced for admin area in 2.4 version.
--->
-      <script>
-        require.config({
-          deps: ["jquery", "mage/translate", "jquery/jquery-storageapi"],
-          callback: function ($) {
-            "use strict";
-
-            var dependencies = [],
-              versionObj;
-
-            $.initNamespaceStorage("mage-translation-storage");
-            $.initNamespaceStorage("mage-translation-file-version");
-            versionObj = $.localStorage.get("mage-translation-file-version");
-
-            if (
-              versionObj.version !== "90781b4f61e3adf42e65dda2617ed62bdacd6928"
-            ) {
-              dependencies.push("text!js-translation.json");
-            }
-
-            require.config({
-              deps: dependencies,
-              callback: function (string) {
-                if (typeof string === "string") {
-                  $.mage.translate.add(JSON.parse(string));
-                  $.localStorage.set("mage-translation-storage", string);
-                  $.localStorage.set("mage-translation-file-version", {
-                    version: "90781b4f61e3adf42e65dda2617ed62bdacd6928",
-                  });
-                } else {
-                  $.mage.translate.add(
-                    $.localStorage.get("mage-translation-storage")
-                  );
-                }
-              },
-            });
-          },
-        });
-      </script>
-      <!-- BEGIN GTAG HOMEPAGE TAG -->
-      <!-- END GTAG HOMEPAGE TAG -->
-      <!-- Facebook Pixel Code -->
-      <script>
-        !(function (f, b, e, v, n, t, s) {
-          if (f.fbq) return;
-          n = f.fbq = function () {
-            n.callMethod
-              ? n.callMethod.apply(n, arguments)
-              : n.queue.push(arguments);
-          };
-          if (!f._fbq) f._fbq = n;
-          n.push = n;
-          n.loaded = !0;
-          n.version = "2.0";
-          n.agent = "dvapptrian";
-          n.queue = [];
-          t = b.createElement(e);
-          t.async = !0;
-          t.src = v;
-          s = b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t, s);
-        })(
-          window,
-          document,
-          "script",
-          "https://connect.facebook.net/en_US/fbevents.js"
-        );
-
-        fbq("init", "335142383853086");
-
-        fbq("track", "PageView");
-      </script>
-      <noscript
-        ><img
-          height="1"
-          width="1"
-          style="display: none"
-          alt="Facebook Pixel"
-          src="https://www.facebook.com/tr?id=335142383853086&amp;ev=PageView&amp;noscript=1"
-      /></noscript>
-
-      <script>
-        require(["jquery"], function ($) {
-          $(function () {});
-        });
-      </script>
       <!-- End Facebook Pixel Code -->
       <div class="scrollToTop">To Top</div>
     </div>
