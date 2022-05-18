@@ -11653,7 +11653,7 @@ div[class^="swatch-opt-"] {
   margin-bottom: 10px; }
 
 .swatch-option-loading {
-  content: url("https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/loader-2.gif"); }
+  content: url("../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/loader-2.gif"); }
 
 .products-grid .product-item .swatch-attribute-options,
 .product-list .product-item .swatch-attribute-options,
@@ -12033,7 +12033,7 @@ div[class^="swatch-opt-"] {
  *
  */
 .fotorama-video-container:after {
-  background: url(https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/Magento_ProductVideo/img/gallery-sprite.png) bottom right;
+  background: url(../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/Magento_ProductVideo/img/gallery-sprite.png) bottom right;
   bottom: 0;
   content: '';
   height: 100px;
@@ -12051,7 +12051,7 @@ div[class^="swatch-opt-"] {
   transform: scale(1.25); }
 
 .video-thumb-icon:after {
-  background: url(https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/Magento_ProductVideo/img/gallery-sprite.png) bottom left;
+  background: url(../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/Magento_ProductVideo/img/gallery-sprite.png) bottom left;
   bottom: 0;
   content: '';
   height: 40px;
@@ -13141,7 +13141,7 @@ div[class^="swatch-opt-"] {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url("https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/bg-menu.jpg");
+    background-image: url("../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/bg-menu.jpg");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain; } }
@@ -13374,7 +13374,7 @@ div[class^="swatch-opt-"] {
       font-size: 26px;
       line-height: 1.3; } }
 .modal-popup.newsletter-popup .modal-inner-wrap {
-  background-image: url("https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/newsletter-popup-bg.png");
+  background-image: url("../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/newsletter-popup-bg.png");
   background-repeat: no-repeat;
   background-position: top right;
   padding: 84px 6%; }
@@ -15495,7 +15495,7 @@ div[class^="swatch-opt-"] {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/loader.gif) center 100px no-repeat;
+    background: url(../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/images/loader.gif) center 100px no-repeat;
     z-index: -1; }
 .block.featured .product-image-wrapper {
   height: auto; }

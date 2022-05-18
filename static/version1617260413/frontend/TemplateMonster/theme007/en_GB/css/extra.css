@@ -361,6 +361,14 @@ a.col4-imglink.imglink-sm,
     margin-top: 25px;
 }
 
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mr-35 {
+    margin-right: 35px;
+}
+
 figure.hbanner {
     position: relative;
     text-align: center;

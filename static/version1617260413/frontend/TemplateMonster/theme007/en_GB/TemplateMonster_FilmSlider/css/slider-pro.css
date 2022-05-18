@@ -315,11 +315,11 @@
 /* Touch Swipe
 --------------------------------------------------*/
 .sp-grab {
-	cursor: url(https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/TemplateMonster_FilmSlider/css/images/openhand.cur), move;
+	cursor: url(../../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/TemplateMonster_FilmSlider/css/images/openhand.cur), move;
 }
 
 .sp-grabbing {
-	cursor: url(https://www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/TemplateMonster_FilmSlider/css/images/closedhand.cur), move;
+	cursor: url(../../../../../../../../../../www.geyser.co.uk/static/version1617260413/frontend/TemplateMonster/theme007/en_GB/TemplateMonster_FilmSlider/css/images/closedhand.cur), move;
 }
 
 .sp-selectable {
