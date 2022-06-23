@@ -70,3 +70,8 @@
 *trade=*
 
 customer/account/login
+
+.zcompdump
+
+.idea
+.nova
